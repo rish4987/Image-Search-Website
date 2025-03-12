@@ -33,7 +33,7 @@ function handleError(error) {
 async function getImages() {
     try {
         showLoading();
-        const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accessKey}&per_page=12`;
+        const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accessKey}&per_page=15`;
         const response = await fetch(url);
         
         if (!response.ok) {
